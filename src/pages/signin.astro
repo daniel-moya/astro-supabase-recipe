@@ -21,9 +21,19 @@ if (accessToken && refreshToken) {
 		enctype="multipart/form-data"
 	>
 		<label for="email">Email</label>
-		<input required type="email" name="email" id="email" />
+		<input type="email" name="email" id="email" />
 		<label for="password">Password</label>
-		<input required type="password" name="password" id="password" />
+		<input type="password" name="password" id="password" />
 		<button type="submit">Login</button>
+		<div>
+			<button type="submit" value="github" name="provider"
+				>Sign in with Github</button
+			>
+		</div>
+		<div>
+			<button type="submit" value="google" name="provider"
+				>Sign in with Google</button
+			>
+		</div>
 	</form>
 </Layout>
